@@ -31,8 +31,8 @@ jobs:
       with:
        cmd: install 
    
-    # - name: Install surge
-     run: npm install --global surge
+    - name: Install Surge
+      run: npm install --global surge
      
    - name: Deploye to Surge
      run: surge ./build bootcamp_react_salman.surge.sh --token ${{secrets.SURGE_TOKEN}} 
